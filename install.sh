@@ -10,7 +10,11 @@ ncsdk_link=https://downloadmirror.intel.com/28192/eng/NCSDK-1.12.01.01.tar.gz
 
 # download the payload from the redirector link
 # and save it the download_filename no matter what the original filename was
-wget --no-cache -O ${download_filename} $ncsdk_link
+if [ ! -e ${download_filename} ]; then
+    wget --no-cache -O ${download_filename} $ncsdk_link
+else
+    echo ${download_filename} " is already downloaded"
+fi
 
 # Get the filenames, ncsdk_archive is just the download filename
 # and ncsdk_pkg is the filename without the .tar.gz
