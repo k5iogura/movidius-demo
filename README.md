@@ -165,9 +165,17 @@ $ cd ncappzoo/stable/TinyYolo
 $ cat tiny-yolo-v1.caffemodel.0* > tiny-yolo-v1.caffemodel
 $ python3 run.py
 ```
-
 ![](files/tiny-result.png)  
 0.44 chair, no bad.  
+
+Next, ***check SSD_MobileNet object detection***  
+```
+$ cd ncappzoo/stable/SSD_MobileNet
+$ python3 run.py
+```
+
+![](files/SSD_MobileNet.png)  
+1.00 chair, great.  
 
 ## Neural Compute Stick development general workflow  
 - generate graph file by mvNCCompile tool on Desktop PC.
