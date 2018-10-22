@@ -68,7 +68,7 @@ synset_words.txt graph  etc.
 ```
 ## API-Library Only Installation On ARM Based Boad  
 
-***API-Library Only Installation : ***  
+***API-Library Only Installation :***  
 On weak CPU like ARMs, you should use NCSDK API-Mode Only.  
 In API-Mode ***can not generate graph file, but*** can use graph file and ***can execute prediction*** with NCS.
 API-Mode is placed at ncsdk/api/src. Setup will end only issue "make install" command with a few seconds. You'll get NCS API-Library ***"libmvnc.so"*** in /usr/local/lib etc.  
