@@ -154,7 +154,7 @@ $ cmake \
      -D ENABLE_NEAON=ON \
      -D BUILD_EXAMPLES=OFF ..
 $ make ; make install
-
+$ python3 -c "import cv2"
 ```
 It takes 6hours on DE10Nano, woUuh...  
 
