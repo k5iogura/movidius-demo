@@ -173,8 +173,7 @@ Next, ***check SSD_MobileNet object detection***
 $ cd ncappzoo/stable/SSD_MobileNet
 $ python3 run.py
 ```
-
-![](files/SSD_MobileNet.png)  
+![](files/SSD_MovileNet.png)  
 1.00 chair, great.  
 
 ## Neural Compute Stick development general workflow  
