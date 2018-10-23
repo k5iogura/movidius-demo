@@ -5,26 +5,32 @@
 
 **DEMO Overview**  
 
-- Multi ARM CPU Boards attached NCSs perform general object detection task by Neural Network on ARM Board.
+- Multi ARM CPU Boards attached NCSs perform general object detection task using Neural Network.
 - Result of Detection is shown in X-Window Display via WiFi or HDMI Display.  
 
-**2 parts**  
+**DEMO consist of 2 equipments**  
+- Handy detector via WiFi AP to X-Window server  
+  High Scalability because usable multi WFi clients.  
+- LCD Display with detector running X-Window server  
+  High speed renderring.
 
-**Part 1 : Hany detector with WiFi Client**  
-ARM CPU Board ( DE10Nano or RaspberryPi ) + NCS + UVC  
+**Equipment 1 : Hany detector with WiFi Client**  
+ARM CPU Board ( DE10Nano or RaspberryPi ) + NCS + MIPI-Camera + WiFi-Client  
+
 - read frames from Camera or media-files.  
 - controls NCS to detect object.  
-- show frames including result of detector.  
-- execute X-Window System.  
+- send frames including result of detector via WiFi.  
+- execute X-Window client.  
 - became WiFi client.  
 
-***Here***  
-- From detector to WiFi AP with LCD  
-  High Scalability.  
+**Equipment 2 : LCD Display X-Window server with WiFi AccessPoint and detector**  
+ARM CPU Board + NCS + LCD + MIPI-Camera+ WiFi-AP
 
-**Points : LCD Display with WiFi AccessPoint and detector**  
-- Detector direct connection with HDMI Display  
-  High Speed Drawing 30FPS.  
+- read frames from Camera or media-files.  
+- controls NCS to detect object.  
+- draw frames including result of detection on HDMI Display.  
+- execute X-Window server.  
+- became WiFi AP.  
 
 ***Problem : Not work simultneously USB Hub NCS and UVC***
 ```
@@ -36,3 +42,5 @@ $ dmesg | tail
 [ 1730.766694] usb 1-1.2: reset high-speed USB device number 28 using dwc2
 ```
 NCS work, UVC work, but simultineously not work and USB Hub reset!  
+
+Power Consumption is heavy.  
