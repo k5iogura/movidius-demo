@@ -67,6 +67,8 @@ deploy.prototxt zero_weights.caffemodel squeezenet_v1.0.caffemodel
 synset_words.txt graph  etc.
 ```
 ## API-Library Only Installation On ARM Based Boad  
+**Notice : Mandatory reboot ARM CPU Board with inserted NCS into USB Port**  
+*NCS not work with HotPlug*
 
 ***API-Library Only Installation :***  
 On weak CPU like ARMs, you should use NCSDK API-Mode Only.  
@@ -175,6 +177,9 @@ $ python3 run.py
 ```
 ![](files/SSD_MovileNet.png)  
 1.00 chair, great.  
+
+***references***  
+- [人工知能 画像認識システム「Pidentifier」を、ラズパイとMovidius でサクッと作ってみた](https://www.rs-online.com/designspark/ai-powered-identification-with-the-pidentifier-jp?&intcmp=JP-WEB-_-Pi-DS2-_-Mar-18-_-Pidentifier)
 
 ## Neural Compute Stick development general workflow  
 - generate graph file by mvNCCompile tool on Desktop PC.
