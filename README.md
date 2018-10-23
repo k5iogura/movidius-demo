@@ -1,5 +1,4 @@
-![](files/movidius.png)
-
+<img src="./files/movidius.png" alt="movidius" width="250"/>
 # NCSDK v1.12.01.01 with Ubuntu 16.04 on CentOS7 PC and xenial on ARM boad
 
 ## NCSDK Full Installation On Desktop PC
@@ -167,7 +166,7 @@ $ cd ncappzoo/stable/TinyYolo
 $ cat tiny-yolo-v1.caffemodel.0* > tiny-yolo-v1.caffemodel
 $ python3 run.py
 ```
-![](files/tiny-result.png)  
+<img src="./files/tiny-result.png" alt="tiny-yolo" width="250"/>
 0.44 chair, no bad.  
 
 Next, ***check SSD_MobileNet object detection***  
@@ -175,7 +174,7 @@ Next, ***check SSD_MobileNet object detection***
 $ cd ncappzoo/stable/SSD_MobileNet
 $ python3 run.py
 ```
-![](files/SSD_MovileNet.png)  
+<img src="./files/SSD_MovileNet.png" alt="SSD_MobileNet" width="250"/>
 1.00 chair, great.  
 
 ***references***  
