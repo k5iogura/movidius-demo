@@ -197,4 +197,4 @@ Tested sample bellow,
 cd ncappzoo/stable/Video_objects
 python3 video_objects_async.py
 ```
-![](files/video_objects_async.png)  
+<img src="./files/video_objects_async.png" alt="Video Objects" width="320"/>
