@@ -198,6 +198,7 @@ $ cd ncappzoo/stable/Video_objects
 $ python3 video_objects_async.py
 ```
 <img src="./files/video_objects_async.png" alt="Video Objects" width="480"/>  
+
 - asynchronous prediction and loading images and skip 2 frames.  
 - 18FPS( Prediction 8FPS )  
 - Single NCS  
