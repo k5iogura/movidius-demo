@@ -190,3 +190,11 @@ python3 script include steps,
 - load tensor image into graph object
 - issue graph.GetResult()
 - show result of prediction
+
+## Video prediction
+Tested sample bellow,
+```
+cd ncappzoo/stable/Video_objects
+python3 video_objects_async.py
+```
+![](files/video_objects_async.png)  
