@@ -198,9 +198,9 @@ $ cd ncappzoo/stable/Video_objects
 $ python3 video_objects_async.py
 ```
 <img src="./files/video_objects_async.png" alt="Video Objects" width="480"/>  
-asynchronous prediction and loading images and skip 2 frames.  
-18FPS( Prediction 8FPS )  
-Single NCS  
-actual video resolution: 960.0 x 540.0  
-300x300 Neural Network input size  
+- asynchronous prediction and loading images and skip 2 frames.  
+- 18FPS( Prediction 8FPS )  
+- Single NCS  
+- actual video resolution: 960.0 x 540.0  
+- 300x300 Neural Network input size  
 Oct.29.2018  
